@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.naomitaub.standuptest.LongTestActivity"
+    android:background="#2E9AFE">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:background="#58ACFA"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:id="@+id/startTimerButtonLong"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="54dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:background="#58ACFA"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:id="@+id/stopTimerButtonLong"
+        android:layout_alignTop="@+id/startTimerButtonLong"
+        android:layout_toEndOf="@+id/startTimerButtonLong"
+        android:layout_marginStart="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewTimeLong"
+        android:layout_below="@+id/startTimerButtonLong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Long Test"
+        android:textSize="35sp"
+        android:id="@+id/longTestBanner"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>

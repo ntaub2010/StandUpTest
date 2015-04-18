@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Stand Up Test</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_account">CreateAccountActivity</string>
+    <string name="title_activity_enter_info">EnterInfoActivity</string>
+    <string name="title_activity_tests">TestsActivity</string>
+    <string name="title_activity_short_test">ShortTestActivity</string>
+    <string name="timerVal">00:00</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="sit">You should be SITTING</string>
+    <string name="stand">You should be STANDING</string>
+    <string name="lie_down">You should be LYING DOWN</string>
+    <string name="enter_HR">Enter HR</string>
+    <string name="rangeBPM">Range</string>
+    <string name="highBPM">High</string>
+    <string name="lowBPM">Low</string>
+    <string name="title_activity_results">ResultsActivity</string>
+    <string name="title_activity_symptoms">SymptomsActivity</string>
+    <string name="symptoms"><![CDATA[
+        <p>
+            &#8226 Low blood pressure<br/>
+            &#8226 Tachycardia<br/>
+            &#8226 Dizziness<br/>
+            &#8226 Fatigue<br/>
+            &#8226 Difficulty concentrating<br/>
+            &#8226 Blood pooling in legs<br/>
+            &#8226 Nausea<br/>
+        </p>
+        ]]></string>
+    <string name="dysautonomia_international_link">
+        <a href="http://www.dysautonomiainternational.org/page.php?ID=30">
+            POTS Symptoms from DINET</a></string>
+    <string name="dinet_symptoms_link">
+        <a href="http://www.dinet.org/index.php/information-resources/pots-place/pots-symptoms">
+            POTS Overview from Dysatuonomia International</a></string>
+    <string name="title_activity_previous_tests">PreviousTestsActivity</string>
+
+
+    <!-- Copyright (C) 2013 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+</resources>

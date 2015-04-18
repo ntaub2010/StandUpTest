@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.naomitaub.standuptest.MediumTestActivity"
+    android:background="#2E9AFE">
+
+
+     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:background="#A9D0F5"
+        android:textAllCaps="false"
+        android:id="@+id/startTimerButtonMedium"
+         android:layout_alignTop="@+id/textViewTimeMedium"
+         android:layout_toStartOf="@+id/textViewTimeMedium"
+         android:layout_marginTop="51dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pause"
+        android:background="#A9D0F5"
+        android:textAllCaps="false"
+        android:id="@+id/stopTimerButtonMedium"
+        android:layout_alignTop="@+id/startTimerButtonMedium"
+        android:layout_toEndOf="@+id/textViewTimeMedium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timerVal"
+        android:id="@+id/textViewTimeMedium"
+        android:textSize="25sp"
+        android:layout_below="@+id/medEnterHRButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Medium Test"
+        android:textSize="35sp"
+        android:id="@+id/mediumTestBanner"
+        android:textAlignment="center"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lie_down"
+        android:id="@+id/medTestMessage"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/mediumTestBanner"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/medTestMessageHR"
+        android:layout_below="@+id/medTestMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="2"
+        android:id="@+id/medHR"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/textViewTimeMedium" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View results"
+        android:textAllCaps="false"
+        android:background="#A9D0F5"
+        android:padding="10dp"
+        android:id="@+id/goToResultsMedButton"
+        android:onClick="launchResults"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#A9D0F5"
+        android:textAllCaps="false"
+        android:text="@string/enter_HR"
+        android:id="@+id/medEnterHRButton"
+        android:layout_alignTop="@+id/medHR"
+        android:layout_toEndOf="@+id/textViewTimeMedium" />
+</RelativeLayout>
