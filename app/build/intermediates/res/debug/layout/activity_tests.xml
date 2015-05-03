@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.naomitaub.standuptest.TestsActivity"
+    android:background="#2E9AFE">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short Test"
+            android:id="@+id/shortTestButton"
+            android:textAllCaps="false"
+            android:background="#58ACFA"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginTop="88dp"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="launchShortTest"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Test"
+            android:background="#58ACFA"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:id="@+id/mediumTestButton"
+            android:layout_marginTop="56dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/shortTestButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="launchMediumTest"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Long Test"
+            android:background="#58ACFA"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:id="@+id/longTestButton"
+            android:layout_marginTop="66dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/mediumTestButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="launchLongTest"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous Tests"
+            android:background="#58ACFA"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:id="@+id/previousTestsButton"
+            android:layout_marginTop="55dp"
+            android:layout_gravity="center"
+            android:onClick="launchPreviousTests"
+            android:layout_below="@+id/longTestButton"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/C:/Users/Naomi/Documents/GitHub/StandUpTest/app/src/main/res/layout/activity_tests.xml -->

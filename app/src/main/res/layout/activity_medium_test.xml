@@ -98,6 +98,7 @@
         android:background="#A9D0F5"
         android:textAllCaps="false"
         android:text="@string/enter_HR"
+        android:padding="10dp"
         android:id="@+id/medEnterHRButton"
         android:layout_alignTop="@+id/medHR"
         android:layout_toEndOf="@+id/textViewTimeMedium" />

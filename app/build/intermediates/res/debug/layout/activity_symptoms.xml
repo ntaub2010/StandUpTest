@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#2E9AFE"
+    tools:context="com.naomitaub.standuptest.SymptomsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Common POTS Symptoms"
+        android:id="@+id/symptomsBanner"
+        android:background="#0174DF"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:layout_marginTop="8dp"
+        android:id="@+id/symptomsBL"
+        android:background="#0174DF"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:gravity="left"
+        android:layout_below="@+id/symptomsBanner"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dysautonomia_international_link"
+        android:id="@+id/dysautonomiaInternationalLinkTextView"
+        android:autoLink="web"
+        android:gravity="center"
+        android:layout_above="@+id/dinetSymptomsLinkTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dinet_symptoms_link"
+        android:autoLink="web"
+        android:id="@+id/dinetSymptomsLinkTextView"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Links with more info:"
+        android:background="#0174DF"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/moreInfoTextView"
+        android:layout_above="@+id/dysautonomiaInternationalLinkTextView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Naomi/Documents/GitHub/StandUpTest/app/src/main/res/layout/activity_symptoms.xml -->

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.naomitaub.standuptest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+    //For Parse
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+ <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+ <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="com.naomitaub.standuptest.ApplicationContextProvider"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.naomitaub.standuptest.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.naomitaub.standuptest.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.naomitaub.standuptest.CreateAccountActivity"
+            android:label="@string/title_activity_create_account" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATEACCOUNT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.naomitaub.standuptest.EnterInfoActivity"
+            android:label="@string/title_activity_enter_info" >
+        </activity>
+        <activity
+            android:name="com.naomitaub.standuptest.TestsActivity"
+            android:label="@string/title_activity_tests" >
+        </activity>
+        <activity
+            android:name="com.naomitaub.standuptest.MediumTestActivity"
+            android:label="MediumTestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIUMTESTACTIVITY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.naomitaub.standuptest.ShortTestActivity"
+            android:label="@string/title_activity_short_test"
+            android:parentActivityName="com.naomitaub.standuptest.TestsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.naomitaub.standuptest.TestsActivity" />
+        </activity>
+        <activity
+            android:name="com.naomitaub.standuptest.ResultsActivity"
+            android:label="@string/title_activity_results" >
+        </activity>
+        <activity
+            android:name="com.naomitaub.standuptest.SymptomsActivity"
+            android:label="@string/title_activity_symptoms" >
+        </activity>
+        <activity
+            android:name="com.naomitaub.standuptest.PreviousTestsActivity"
+            android:label="@string/title_activity_previous_tests" >
+        </activity>
+    </application>
+
+</manifest>
