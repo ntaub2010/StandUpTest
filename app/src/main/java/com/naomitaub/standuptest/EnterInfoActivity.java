@@ -16,8 +16,9 @@ public class EnterInfoActivity extends MainActivity {
 
     EditText enterInfoFirstName, enterInfoLastName, enterInfoBirthdate, enterInfoAge;
     RadioButton femaleButton, maleButton, otherButton;
-    Button enterInfoSaveButton, goToTestsButton;
-    String enterInfoGender, EIFName, EILName, EIBDate, email;
+    Button enterInfoSaveButton;
+    //Button goToTestsButton;
+    String enterInfoGender, EIFName, EILName, EIBDate, email, ageString;
     int EIAge;
     Context ctxEnterInfo = this;
 
@@ -33,7 +34,10 @@ public class EnterInfoActivity extends MainActivity {
         enterInfoLastName = (EditText) findViewById(R.id.lastNameText);
         enterInfoBirthdate = (EditText) findViewById(R.id.birthdateText);
         enterInfoAge = (EditText) findViewById(R.id.ageText);
-        goToTestsButton = (Button) findViewById(R.id.continueToTestsButton);
+        ageString = enterInfoAge.getText().toString();
+        if(ageString == "")
+            ageString = "0";
+        //goToTestsButton = (Button) findViewById(R.id.continueToTestsButton);
 
         enterInfoSaveButton = (Button)findViewById(R.id.saveInfoButton);
         enterInfoSaveButton.setOnClickListener(new View.OnClickListener() {
@@ -42,8 +46,7 @@ public class EnterInfoActivity extends MainActivity {
                 EIFName = enterInfoFirstName.getText().toString();
                 EILName = enterInfoLastName.getText().toString();
                 EIBDate = enterInfoBirthdate.getText().toString();
-                EIAge = Integer.parseInt(enterInfoAge.getText().toString());
-
+                EIAge = Integer.parseInt(ageString);
 
                 femaleButton = (RadioButton) findViewById(R.id.genderFemaleButton);
                 maleButton = (RadioButton) findViewById(R.id.genderMaleButton);
@@ -59,15 +62,16 @@ public class EnterInfoActivity extends MainActivity {
                     enterInfoGender = "Other";
 
                 DatabaseOperations DB = new DatabaseOperations(ctxEnterInfo);
-                DB.putUserInfo(DB, EIFName, EILName, EIBDate, EIAge, enterInfoGender);
+                DB.putUserInfo(DB, email, EIFName, EILName, EIBDate, EIAge, enterInfoGender);
 
                 Toast.makeText(getBaseContext(), "User info updating successful", Toast.LENGTH_LONG).show();
 
-                goToTestsButton.setOnClickListener(new View.OnClickListener() {
+                launchTests(v, email);
+                /*goToTestsButton.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View view) {
                         launchTests(view, email);
                     }
-                });
+                });*/
 
                 //finish();
 

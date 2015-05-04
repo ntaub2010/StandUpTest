@@ -17,27 +17,29 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="First Name"
         android:id="@+id/firstNameTextView"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Birthdate"
-        android:id="@+id/birthdateTextView"
-        android:layout_marginTop="29dp"
-        android:layout_below="@+id/firstNameText"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Birthdate"
+        android:layout_marginTop="24dp"
+        android:id="@+id/birthdateTextView"
+        android:layout_below="@+id/lastNameText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Gender"
+        android:layout_marginTop="20dp"
         android:id="@+id/genderTextView"
-        android:layout_above="@+id/radioGroup"
+        android:layout_below="@+id/ageText"
         android:layout_centerHorizontal="true" />
 
     <EditText
@@ -48,56 +50,20 @@
         android:ems="10"
         android:id="@+id/firstNameText"
         android:layout_below="@+id/firstNameTextView"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/ageTextView" />
+        android:layout_centerHorizontal="true" />
 
     <RadioGroup
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/radioGroup"
         android:layout_marginBottom="25dp"
-        android:layout_above="@+id/continueToTestsButton"
+        android:layout_above="@+id/saveInfoButton"
         android:layout_alignEnd="@+id/ageText"
         android:layout_toEndOf="@+id/firstNameTextView"
         android:layout_alignStart="@+id/birthdateTextView">
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Female"
-            android:id="@+id/genderFemaleButton"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Male"
-            android:id="@+id/genderMaleButton"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Other"
-            android:id="@+id/genderOtherButton"
-            android:checked="false" />
-
     </RadioGroup>
 
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Continue to Tests"
-        android:textAllCaps="false"
-        android:id="@+id/continueToTestsButton"
-        android:background="#58ACFA"
-        android:textColor="#FFFFFF"
-        android:padding="10dp"
-        android:gravity="center"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/genderTextView" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -106,7 +72,7 @@
         android:ems="10"
         android:id="@+id/birthdateText"
         android:layout_below="@+id/birthdateTextView"
-        android:layout_alignStart="@+id/ageText" />
+        android:layout_toStartOf="@+id/genderFemaleButton" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -114,9 +80,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Age"
         android:id="@+id/ageTextView"
-        android:layout_marginTop="39dp"
-        android:layout_above="@+id/ageText"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/birthdateText"
+        android:layout_alignEnd="@+id/lastNameText" />
 
     <EditText
 
@@ -125,8 +90,9 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/ageText"
-        android:layout_above="@id/genderTextView"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/ageTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/genderFemaleButton" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -134,8 +100,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Last Name"
         android:id="@+id/lastNameTextView"
-        android:layout_above="@+id/lastNameText"
-        android:layout_alignEnd="@+id/continueToTestsButton" />
+        android:layout_below="@+id/firstNameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -144,9 +111,8 @@
         android:text=""
         android:ems="10"
         android:id="@+id/lastNameText"
-        android:layout_above="@+id/birthdateTextView"
-        android:layout_alignEnd="@+id/lastNameTextView"
-        android:layout_toEndOf="@+id/birthdateTextView" />
+        android:layout_below="@+id/lastNameTextView"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:background="#58ACFA"
@@ -154,12 +120,39 @@
         android:padding="10dp"
         android:gravity="center"
         android:textAllCaps="false"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Save Info"
         android:id="@+id/saveInfoButton"
         android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/radioGroup" />
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:id="@+id/genderFemaleButton"
+        android:checked="false"
+        android:layout_below="@+id/genderTextView"
+        android:layout_alignStart="@+id/firstNameTextView" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:id="@+id/genderMaleButton"
+        android:checked="false"
+        android:layout_below="@+id/genderFemaleButton"
+        android:layout_alignLeft="@+id/firstNameTextView" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:id="@+id/genderOtherButton"
+        android:checked="false"
+        android:layout_below="@+id/genderMaleButton"
+        android:layout_alignLeft="@+id/firstNameTextView" />
 
 
 </RelativeLayout>

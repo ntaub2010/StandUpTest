@@ -27,9 +27,9 @@ public class DatabaseOperations extends SQLiteOpenHelper {
             MyConstants.Constants.GENDER + "TEXT */
 
     public static String CREATE_USER_INFO_QUERY = "CREATE TABLE " + MyConstants.Constants.USER_INFO_TABLE +
-            "(" + MyConstants.Constants.FIRST_NAME + " TEXT, " + MyConstants.Constants.LAST_NAME + " TEXT, " +
-            MyConstants.Constants.BIRTHDATE + " TEXT, " + MyConstants.Constants.AGE + " INTEGER, " +
-            MyConstants.Constants.GENDER + " TEXT);";
+            "(" + MyConstants.Constants.USERNAME + " TEXT, " + MyConstants.Constants.FIRST_NAME + " TEXT, " +
+            MyConstants.Constants.LAST_NAME + " TEXT, " + MyConstants.Constants.BIRTHDATE + " TEXT, " +
+            MyConstants.Constants.AGE + " INTEGER, " + MyConstants.Constants.GENDER + " TEXT);";
 
     public static String CREATE_RECORDS_QUERY = "CREATE TABLE " + MyConstants.Constants.USER_HR_RECORDS_TABLE +
             "(" + MyConstants.Constants.USERNAME + " TEXT, " + MyConstants.Constants.TEST_TYPE + " TEXT, " +
@@ -75,11 +75,12 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 
     }
 
-    public void putUserInfo(DatabaseOperations dop, String fName, String lName, String bDate, int age, String gender) {
+    public void putUserInfo(DatabaseOperations dop, String username, String fName, String lName, String bDate, int age, String gender) {
 
         SQLiteDatabase SQ = dop.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
+        cv.put(MyConstants.Constants.USERNAME, username);
         cv.put(MyConstants.Constants.FIRST_NAME, fName);
         cv.put(MyConstants.Constants.LAST_NAME, lName);
         cv.put(MyConstants.Constants.BIRTHDATE, bDate);

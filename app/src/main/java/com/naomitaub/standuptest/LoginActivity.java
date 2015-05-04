@@ -14,7 +14,7 @@ public class LoginActivity extends MainActivity {
     EditText loginEmail, loginPassword;
     String login_email, login_password;
     Context ctxLogin = this;
-    Button signInButton;
+    Button signInButton, enterInfoButton;
     boolean loginStatus;
     Cursor CR;
 
@@ -25,6 +25,7 @@ public class LoginActivity extends MainActivity {
         setContentView(R.layout.activity_login);
 
         signInButton = (Button) findViewById(R.id.email_sign_in_button);
+        enterInfoButton = (Button) findViewById(R.id.enterInfoButtonLogin);
 
         loginEmail = (EditText)findViewById(R.id.email);
         loginPassword = (EditText)findViewById(R.id.password);
@@ -64,6 +65,16 @@ public class LoginActivity extends MainActivity {
                     Toast.makeText(getBaseContext(), "Error: Login failed", Toast.LENGTH_LONG).show();
                     //finish();
                 }
+            }
+        });
+
+        enterInfoButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                //this isn't working as it should
+                if(login_email == "" && login_password == "")
+                    Toast.makeText(getBaseContext(), "No information entered", Toast.LENGTH_LONG).show();
+                else
+                    launchEnterInfo(view, login_email);
             }
         });
 

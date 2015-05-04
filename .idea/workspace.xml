@@ -7,13 +7,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d75e4753-0e71-4616-b5b6-07f795a2aa17" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/CreateAccountActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/CreateAccountActivity$1.class" />
+      <change type="DELETED" beforePath="C:\Users\Naomi\Documents\GitHub\StandUpTest\app\build\intermediates\classes\debug\com\naomitaub\standuptest\EnterInfoActivity$1$1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/CreateAccountActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/CreateAccountActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/CreateAccountActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/CreateAccountActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/DatabaseOperations.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/DatabaseOperations.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/EnterInfoActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/EnterInfoActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/EnterInfoActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/EnterInfoActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/LoginActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/LoginActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/LongTestActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/LongTestActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/LongTestActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/LongTestActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/MediumTestActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/MediumTestActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/MediumTestActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/MediumTestActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/PreviousTestsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/PreviousTestsActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$mipmap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/ResultsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/ResultsActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/ShortTestActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/ShortTestActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/ShortTestActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/ShortTestActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/SymptomsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/SymptomsActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/TestsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/naomitaub/standuptest/TestsActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
@@ -22,12 +44,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/CreateAccountActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/CreateAccountActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/DatabaseOperations.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/DatabaseOperations.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/EnterInfoActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/EnterInfoActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/naomitaub/standuptest/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/naomitaub/standuptest/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_create_account.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_create_account.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_account.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_account.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_enter_info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_enter_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_enter_info.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_enter_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_login.xml" />
@@ -52,7 +73,7 @@
     <favorites_list name="StandUpTest" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5502674">
+    <splitter split-orientation="horizontal" split-proportion="0.5890208">
       <split-first>
         <leaf>
           <file leaf-file-name="ResultsActivity.java" pinned="false" current-in-tab="false">
@@ -67,16 +88,38 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CreateAccountActivity.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CreateAccountActivity.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/CreateAccountActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.69775283">
-                  <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="13" column="54" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="54" />
                   <folding>
                     <element signature="e#1675#2049#0" expanded="true" />
                     <element signature="e#2048#2049#0" expanded="true" />
                   </folding>
                 </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+              <provider editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#294#327#0" expanded="true" />
+                    <element signature="e#385#420#0" expanded="true" />
+                    <element signature="e#446#481#0" expanded="true" />
+                    <element signature="e#505#538#0" expanded="true" />
+                    <element signature="e#908#930#0" expanded="true" />
+                    <element signature="e#1575#1600#0" expanded="true" />
+                    <element signature="e#2579#2596#0" expanded="true" />
+                    <element signature="e#4370#4385#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+              <provider selected="true" editor-type-id="android-designer">
+                <state />
               </provider>
             </entry>
           </file>
@@ -156,15 +199,15 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="activity_enter_info.xml" pinned="false" current-in-tab="false">
+          <file leaf-file-name="activity_enter_info.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_enter_info.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.0">
-                  <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
+              <provider editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
-              <provider editor-type-id="android-designer">
+              <provider selected="true" editor-type-id="android-designer">
                 <state />
               </provider>
             </entry>
@@ -199,10 +242,8 @@
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/DatabaseOperations.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
-                  <folding>
-                    <element signature="imports" expanded="false" />
-                  </folding>
+                  <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -220,36 +261,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-11.676471">
-                  <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
-                  <folding />
-                </state>
-              </provider>
-              <provider editor-type-id="android-designer">
-                <state />
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/MainActivity.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="119" column="54" selection-start-line="119" selection-start-column="54" selection-end-line="119" selection-end-column="54" />
-                  <folding>
-                    <element signature="imports" expanded="false" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="activity_create_account.xml" pinned="false" current-in-tab="true">
+          <file leaf-file-name="activity_create_account.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_create_account.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.63084114">
-                  <caret line="88" column="44" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="44" />
+                <state vertical-scroll-proportion="-10.323529">
+                  <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -258,14 +284,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="EnterInfoActivity.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="EnterInfoActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/EnterInfoActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.99509805">
+                  <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
                   <folding>
-                    <element signature="e#2633#2804#0" expanded="true" />
-                    <element signature="e#2803#2804#0" expanded="true" />
+                    <element signature="e#1536#3023#0" expanded="true" />
+                    <element signature="e#3022#3023#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -288,9 +314,12 @@
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/LoginActivity.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+                  <caret line="78" column="11" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
                   <folding>
-                    <element signature="imports" expanded="false" />
+                    <element signature="e#1011#2345#0" expanded="true" />
+                    <element signature="e#2344#2345#0" expanded="true" />
+                    <element signature="e#2392#2784#0" expanded="true" />
+                    <element signature="e#2783#2784#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -300,14 +329,9 @@
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/TestsActivity.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+                  <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
                   <folding>
-                    <element signature="e#1110#1254#0" expanded="false" />
-                    <element signature="e#1253#1254#0" expanded="false" />
-                    <element signature="e#1300#1442#0" expanded="false" />
-                    <element signature="e#1441#1442#0" expanded="false" />
-                    <element signature="e#1493#1640#0" expanded="false" />
-                    <element signature="e#1639#1640#0" expanded="false" />
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -1082,7 +1106,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_medium_test.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tests.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/ShortTestActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/LongTestActivity.java" />
@@ -1092,13 +1115,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/MyConstants.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/PreviousTestsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/TestsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/DatabaseOperations.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_results.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_create_account.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/CreateAccountActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/DatabaseOperations.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/EnterInfoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_enter_info.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_create_account.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/CreateAccountActivity.java" />
       </list>
     </option>
   </component>
@@ -1268,7 +1292,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="6b5e973d" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.101:5555" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21_x86" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="238" />
     <property name="FullScreen" value="false" />
@@ -1476,7 +1500,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1491,7 +1515,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328877" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.9674973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30119178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1576,7 +1600,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#294#327#0" expanded="true" />
+            <element signature="e#385#420#0" expanded="true" />
+            <element signature="e#446#481#0" expanded="true" />
+            <element signature="e#505#538#0" expanded="true" />
+            <element signature="e#908#930#0" expanded="true" />
+            <element signature="e#1575#1600#0" expanded="true" />
+            <element signature="e#2579#2596#0" expanded="true" />
+            <element signature="e#4370#4385#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1616,9 +1649,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1637,9 +1668,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="119" column="54" selection-start-line="119" selection-start-column="54" selection-end-line="119" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1648,8 +1677,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
           <folding>
-            <element signature="e#2633#2804#0" expanded="true" />
-            <element signature="e#2803#2804#0" expanded="true" />
+            <element signature="e#1536#3023#0" expanded="true" />
+            <element signature="e#3022#3023#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1670,7 +1699,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1011#2345#0" expanded="true" />
+            <element signature="e#2344#2345#0" expanded="true" />
+            <element signature="e#2392#2784#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1680,12 +1712,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
           <folding>
-            <element signature="e#1110#1254#0" expanded="false" />
-            <element signature="e#1253#1254#0" expanded="false" />
-            <element signature="e#1300#1442#0" expanded="false" />
-            <element signature="e#1441#1442#0" expanded="false" />
-            <element signature="e#1493#1640#0" expanded="false" />
-            <element signature="e#1639#1640#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1694,9 +1721,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1715,9 +1740,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="118" column="48" selection-start-line="118" selection-start-column="48" selection-end-line="118" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1734,7 +1757,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1011#2345#0" expanded="true" />
+            <element signature="e#2344#2345#0" expanded="true" />
+            <element signature="e#2392#2784#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1743,9 +1769,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1764,9 +1788,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="297" column="0" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1783,7 +1805,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1011#2345#0" expanded="true" />
+            <element signature="e#2344#2345#0" expanded="true" />
+            <element signature="e#2392#2784#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1920,16 +1945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/ShortTestActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2001,53 +2016,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/MyConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="54" selection-start-line="119" selection-start-column="54" selection-end-line="119" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/TestsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
-          <folding>
-            <element signature="e#1110#1254#0" expanded="false" />
-            <element signature="e#1253#1254#0" expanded="false" />
-            <element signature="e#1300#1442#0" expanded="false" />
-            <element signature="e#1441#1442#0" expanded="false" />
-            <element signature="e#1493#1640#0" expanded="false" />
-            <element signature="e#1639#1640#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/PreviousTestsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/DatabaseOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -2065,28 +2037,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.676471">
-          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_enter_info.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/ResultsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2097,21 +2047,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/EnterInfoActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/MyConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/DatabaseOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="119" column="54" selection-start-line="119" selection-start-column="54" selection-end-line="119" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/TestsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#2633#2804#0" expanded="true" />
-            <element signature="e#2803#2804#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="11" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
+          <folding>
+            <element signature="e#1011#2345#0" expanded="true" />
+            <element signature="e#2344#2345#0" expanded="true" />
+            <element signature="e#2392#2784#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+          <folding>
+            <element signature="e#294#327#0" expanded="true" />
+            <element signature="e#385#420#0" expanded="true" />
+            <element signature="e#446#481#0" expanded="true" />
+            <element signature="e#505#538#0" expanded="true" />
+            <element signature="e#908#930#0" expanded="true" />
+            <element signature="e#1575#1600#0" expanded="true" />
+            <element signature="e#2579#2596#0" expanded="true" />
+            <element signature="e#4370#4385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_create_account.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63084114">
-          <caret line="88" column="44" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="44" />
+        <state vertical-scroll-proportion="-10.323529">
+          <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -2121,13 +2127,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/CreateAccountActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69775283">
-          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="54" />
           <folding>
             <element signature="e#1675#2049#0" expanded="true" />
             <element signature="e#2048#2049#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/naomitaub/standuptest/EnterInfoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.99509805">
+          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+          <folding>
+            <element signature="e#1536#3023#0" expanded="true" />
+            <element signature="e#3022#3023#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_enter_info.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
