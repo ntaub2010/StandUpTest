@@ -462,9 +462,9 @@ int id checkbox 0x7f0a003d
 int id classic 0x7f0a002f
 int id collapseActionView 0x7f0a001c
 int id continueToTestsButton 0x7f0a0061
-int id createAccountButton 0x7f0a0058
+int id createAccountButton 0x7f0a0059
 int id createAccountEmail 0x7f0a0056
-int id createAccountPassword 0x7f0a0057
+int id createAccountPassword 0x7f0a0058
 int id decor_content_parent 0x7f0a0043
 int id default_activity_button 0x7f0a0038
 int id dialog 0x7f0a0020
@@ -476,9 +476,9 @@ int id dysautonomiaInternationalLinkTextView 0x7f0a009a
 int id edit_query 0x7f0a0047
 int id email 0x7f0a006a
 int id email_login_form 0x7f0a0055
-int id email_sign_in_button 0x7f0a006b
+int id email_sign_in_button 0x7f0a006c
 int id end 0x7f0a0014
-int id enterInfoButton 0x7f0a0059
+int id enterInfoButton 0x7f0a005a
 int id expand_activities_button 0x7f0a0036
 int id expanded_menu 0x7f0a003c
 int id firstNameText 0x7f0a005d
@@ -527,7 +527,7 @@ int id moreInfoTextView 0x7f0a009c
 int id never 0x7f0a001e
 int id none 0x7f0a000e
 int id normal 0x7f0a000a
-int id password 0x7f0a006c
+int id password 0x7f0a006b
 int id previousTestsBanner 0x7f0a008c
 int id previousTestsButton 0x7f0a00a0
 int id production 0x7f0a0025
@@ -584,7 +584,7 @@ int id symptomsBL 0x7f0a0099
 int id symptomsBanner 0x7f0a0098
 int id tabMode 0x7f0a000b
 int id terrain 0x7f0a001a
-int id textView 0x7f0a005a
+int id textView 0x7f0a0057
 int id textViewTimeLong 0x7f0a0070
 int id textViewTimeMedium 0x7f0a007a
 int id textViewTimeShort 0x7f0a0090

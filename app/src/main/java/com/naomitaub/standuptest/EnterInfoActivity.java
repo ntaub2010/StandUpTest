@@ -16,7 +16,7 @@ public class EnterInfoActivity extends MainActivity {
 
     EditText enterInfoFirstName, enterInfoLastName, enterInfoBirthdate, enterInfoAge;
     RadioButton femaleButton, maleButton, otherButton;
-    Button enterInfoSaveButton;
+    Button enterInfoSaveButton, goToTestsButton;
     String enterInfoGender, EIFName, EILName, EIBDate, email;
     int EIAge;
     Context ctxEnterInfo = this;
@@ -33,6 +33,7 @@ public class EnterInfoActivity extends MainActivity {
         enterInfoLastName = (EditText) findViewById(R.id.lastNameText);
         enterInfoBirthdate = (EditText) findViewById(R.id.birthdateText);
         enterInfoAge = (EditText) findViewById(R.id.ageText);
+        goToTestsButton = (Button) findViewById(R.id.continueToTestsButton);
 
         enterInfoSaveButton = (Button)findViewById(R.id.saveInfoButton);
         enterInfoSaveButton.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +62,13 @@ public class EnterInfoActivity extends MainActivity {
                 DB.putUserInfo(DB, EIFName, EILName, EIBDate, EIAge, enterInfoGender);
 
                 Toast.makeText(getBaseContext(), "User info updating successful", Toast.LENGTH_LONG).show();
-                launchTests(v, email);
+
+                goToTestsButton.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View view) {
+                        launchTests(view, email);
+                    }
+                });
+
                 //finish();
 
             }

@@ -1724,9 +1724,9 @@ containing a value of this type.
         public static final int classic=0x7f0a002f;
         public static final int collapseActionView=0x7f0a001c;
         public static final int continueToTestsButton=0x7f0a0061;
-        public static final int createAccountButton=0x7f0a0058;
+        public static final int createAccountButton=0x7f0a0059;
         public static final int createAccountEmail=0x7f0a0056;
-        public static final int createAccountPassword=0x7f0a0057;
+        public static final int createAccountPassword=0x7f0a0058;
         public static final int decor_content_parent=0x7f0a0043;
         public static final int default_activity_button=0x7f0a0038;
         public static final int dialog=0x7f0a0020;
@@ -1738,9 +1738,9 @@ containing a value of this type.
         public static final int edit_query=0x7f0a0047;
         public static final int email=0x7f0a006a;
         public static final int email_login_form=0x7f0a0055;
-        public static final int email_sign_in_button=0x7f0a006b;
+        public static final int email_sign_in_button=0x7f0a006c;
         public static final int end=0x7f0a0014;
-        public static final int enterInfoButton=0x7f0a0059;
+        public static final int enterInfoButton=0x7f0a005a;
         public static final int expand_activities_button=0x7f0a0036;
         public static final int expanded_menu=0x7f0a003c;
         public static final int firstNameText=0x7f0a005d;
@@ -1789,7 +1789,7 @@ containing a value of this type.
         public static final int never=0x7f0a001e;
         public static final int none=0x7f0a000e;
         public static final int normal=0x7f0a000a;
-        public static final int password=0x7f0a006c;
+        public static final int password=0x7f0a006b;
         public static final int previousTestsBanner=0x7f0a008c;
         public static final int previousTestsButton=0x7f0a00a0;
         public static final int production=0x7f0a0025;
@@ -1846,7 +1846,7 @@ containing a value of this type.
         public static final int symptomsBanner=0x7f0a0098;
         public static final int tabMode=0x7f0a000b;
         public static final int terrain=0x7f0a001a;
-        public static final int textView=0x7f0a005a;
+        public static final int textView=0x7f0a0057;
         public static final int textViewTimeLong=0x7f0a0070;
         public static final int textViewTimeMedium=0x7f0a007a;
         public static final int textViewTimeShort=0x7f0a0090;

@@ -96,7 +96,6 @@
         android:textColor="#FFFFFF"
         android:padding="10dp"
         android:gravity="center"
-        android:onClick="launchTests"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/genderTextView" />
 
