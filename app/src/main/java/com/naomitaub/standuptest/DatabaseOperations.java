@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -116,6 +117,14 @@ public class DatabaseOperations extends SQLiteOpenHelper {
     public Cursor getRecordsInfo(DatabaseOperations dop) {
         SQLiteDatabase SQ = dop.getReadableDatabase();
         String[] columns = {MyConstants.Constants.TEST_TYPE, MyConstants.Constants.RECORD_DATE, MyConstants.Constants.RECORD_TIME};
+        Cursor CR = SQ.query(MyConstants.Constants.USER_HR_RECORDS_TABLE, columns, null, null, null, null, null);
+        return CR;
+    }
+
+    public Cursor getTestInfo(DatabaseOperations dop) {
+        SQLiteDatabase SQ = dop.getReadableDatabase();
+        String[] columns = {MyConstants.Constants.TEST_TYPE, MyConstants.Constants.RECORD_DATE, MyConstants.Constants.RECORD_TIME,
+        MyConstants.Constants.LOWEST_BPM, MyConstants.Constants.HIGHEST_BPM, MyConstants.Constants.RANGE_BPM};
         Cursor CR = SQ.query(MyConstants.Constants.USER_HR_RECORDS_TABLE, columns, null, null, null, null, null);
         return CR;
     }

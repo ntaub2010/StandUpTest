@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -18,7 +19,7 @@ public class ResultsActivity extends MainActivity {
     int rangeInt, highInt, lowInt, lowest, range, temp1, temp2, temp3;
     public Calendar cal = new GregorianCalendar();
     //make button to go to save results
-    Context ctx;
+    Context ctx = this;
     Button saveResultsButton;
 
     @Override
@@ -28,6 +29,7 @@ public class ResultsActivity extends MainActivity {
 
         Intent intent = getIntent();
         testType = intent.getStringExtra("testType");
+        date = intent.getStringExtra("date");
         time = intent.getStringExtra("time");
         lowest = intent.getIntExtra("lowest", 0);
         temp2 = intent.getIntExtra("highest", 0);
@@ -43,10 +45,6 @@ public class ResultsActivity extends MainActivity {
         resultsDate = (TextView) findViewById(R.id.resultsDate);
         resultsTime = (TextView) findViewById(R.id.resultsTime);
         resultsBlurb = (TextView) findViewById(R.id.resultsBlurb);
-
-        date = Integer.toString((cal.get(Calendar.MONTH)) + 1) + "/" +
-                Integer.toString(cal.get(Calendar.DAY_OF_MONTH)) + "/" +
-                Integer.toString(cal.get(Calendar.YEAR));
 
         resultsDate.setText("Date: " + date);
         resultsTime.setText("Time Started: " + time);
@@ -72,6 +70,8 @@ public class ResultsActivity extends MainActivity {
             public void onClick(View view) {
                 DatabaseOperations DB = new DatabaseOperations(ctx);
                 DB.putRecordInfo(DB, testType, date, time, lowest, temp2, range, blurbString);
+
+                Toast.makeText(getBaseContext(), "Record insertion successful", Toast.LENGTH_LONG).show();
             }
         });
     }

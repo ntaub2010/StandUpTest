@@ -31,7 +31,7 @@ public class MediumTestActivity extends MainActivity {
     long updatedTimeM = 0L;
     public int LDHRM, countM = 0, lowest, range, temp1, temp2, temp3;
     public String testType;
-    public String time;
+    public String time, date;
     private int medHRArray [] = new int[30], medHRArrayTime [] = new int[30];
 
     public Calendar cal = new GregorianCalendar();
@@ -52,6 +52,9 @@ public class MediumTestActivity extends MainActivity {
         medHR = (EditText) findViewById(R.id.medHR);
         medEnterHR = (Button) findViewById(R.id.medEnterHRButton);
 
+        date = Integer.toString((cal.get(Calendar.MONTH)) + 1) + "/" +
+                Integer.toString(cal.get(Calendar.DAY_OF_MONTH)) + "/" +
+                Integer.toString(cal.get(Calendar.YEAR));
 
         buttonStartM.setOnClickListener(new View.OnClickListener() {
 
@@ -91,7 +94,7 @@ public class MediumTestActivity extends MainActivity {
         viewResults.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                launchResults(view, testType, time, lowest, temp2, range);
+                launchResults(view, testType, date, time, lowest, temp2, range);
                 //enter proper parameters
             }
         });

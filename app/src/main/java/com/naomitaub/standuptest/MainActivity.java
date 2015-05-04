@@ -93,10 +93,11 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
-    public void launchResults(View view, String testType, String time, int lowest, int highest, int range) {
+    public void launchResults(View view, String testType, String date, String time, int lowest, int highest, int range) {
 
         Intent intent = new Intent(this, ResultsActivity.class);
         intent.putExtra("testType", testType);
+        intent.putExtra("date", date);
         intent.putExtra("time", time);
         intent.putExtra("lowest", lowest);
         intent.putExtra("highest", highest);

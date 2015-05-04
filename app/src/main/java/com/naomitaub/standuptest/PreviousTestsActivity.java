@@ -24,8 +24,8 @@ public class PreviousTestsActivity extends MainActivity implements AdapterView.O
     Context ctxPrevTests = this;
     private ArrayAdapter<String> adapter;
     Cursor CR;
-    int rangeInt, highInt, lowInt;
-    String dateString, timeString, blurbString;
+    int lowest, temp2, range;
+    String time, date;
     Context ctxResults = this;
     public String testType;
 
@@ -57,13 +57,6 @@ public class PreviousTestsActivity extends MainActivity implements AdapterView.O
 
     }
 
-    public void saveResults(View view) {
-        DatabaseOperations DB = new DatabaseOperations(ctxResults);
-        DB.putRecordInfo(DB, testType, dateString, timeString, lowInt, highInt, rangeInt, blurbString);
-
-        Toast.makeText(getBaseContext(), "Record insertion successful", Toast.LENGTH_LONG).show();
-    }
-
     public void onItemClick(AdapterView<?> l, View v, int position, long id) {
         Log.i("HelloListView", "You clicked Item: " + id + " at position:" + position);
         // Then you start a new Activity via Intent
@@ -71,7 +64,23 @@ public class PreviousTestsActivity extends MainActivity implements AdapterView.O
         //intent.setClass(this, ResultsActivity.class);
         //intent.putExtra("rowPosition", position);
         //startActivity(intent);
-        //launchResults(v);
+        DatabaseOperations DOP = new DatabaseOperations(ctxPrevTests);
+        CR = DOP.getTestInfo(DOP);
+        /*if(CR != null && CR.moveToFirst()) {
+            do {
+                CR.moveToPosition(position);
+            } while (CR.moveToNext());
+            CR.close();
+        }*/
+
+        CR.moveToPosition(position);
+        testType = CR.getString(0);
+        date = CR.getString(1);
+        time = CR.getString(2);
+        lowest = CR.getInt(3);
+        temp2 = CR.getInt(4);
+        range = CR.getInt(5);
+        launchResults(v, testType, date, time, lowest, temp2, range);
     }
 }
 

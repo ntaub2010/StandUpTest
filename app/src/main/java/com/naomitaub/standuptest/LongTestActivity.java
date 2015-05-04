@@ -30,7 +30,7 @@ public class LongTestActivity extends MainActivity {
     long updatedTimeL = 0L;
     public int LDHRL, countL = 0, lowest, range, temp1, temp2, temp3;
     public String testType;
-    public String time;
+    public String time, date;
     private int longHRArray [] = new int[60], longHRArrayTime [] = new int[60];
 
     public Calendar cal = new GregorianCalendar();
@@ -50,6 +50,9 @@ public class LongTestActivity extends MainActivity {
         longHR = (EditText) findViewById(R.id.longHR);
         longEnterHR = (Button) findViewById(R.id.longEnterHRButton);
 
+        date = Integer.toString((cal.get(Calendar.MONTH)) + 1) + "/" +
+                Integer.toString(cal.get(Calendar.DAY_OF_MONTH)) + "/" +
+                Integer.toString(cal.get(Calendar.YEAR));
 
         buttonStartL.setOnClickListener(new View.OnClickListener() {
 
@@ -89,7 +92,7 @@ public class LongTestActivity extends MainActivity {
         viewResults.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                launchResults(view, testType, time, lowest, temp2, range);
+                launchResults(view, testType, date, time, lowest, temp2, range);
                 //enter proper parameters
             }
         });

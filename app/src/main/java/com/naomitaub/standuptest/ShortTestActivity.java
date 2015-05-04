@@ -49,6 +49,9 @@ public class ShortTestActivity extends MainActivity {
         shortHR = (EditText) findViewById(R.id.shortHR);
         shortEnterHR = (Button) findViewById(R.id.shortEnterHRButton);
 
+        date = Integer.toString((cal.get(Calendar.MONTH)) + 1) + "/" +
+                Integer.toString(cal.get(Calendar.DAY_OF_MONTH)) + "/" +
+                Integer.toString(cal.get(Calendar.YEAR));
 
         buttonStartS.setOnClickListener(new View.OnClickListener() {
 
@@ -88,7 +91,7 @@ public class ShortTestActivity extends MainActivity {
         viewResults.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                launchResults(view, testType, time, lowest, temp2, range);
+                launchResults(view, testType, date, time, lowest, temp2, range);
                 //enter proper parameters
             }
         });
