@@ -57,7 +57,7 @@ public class LoginActivity extends MainActivity {
 
                 if(loginStatus) {
                     Toast.makeText(getBaseContext(), "Login successful", Toast.LENGTH_LONG).show();
-                    launchTests(v);
+                    launchTests(v, login_email);
                     //finish();
                 }
                 else {

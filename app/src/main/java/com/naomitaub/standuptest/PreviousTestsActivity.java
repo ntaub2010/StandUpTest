@@ -2,6 +2,7 @@ package com.naomitaub.standuptest;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -25,7 +26,7 @@ public class PreviousTestsActivity extends MainActivity implements AdapterView.O
     private ArrayAdapter<String> adapter;
     Cursor CR;
     int lowest, temp2, range;
-    String time, date;
+    String time, date, email;
     Context ctxResults = this;
     public String testType;
 
@@ -34,11 +35,14 @@ public class PreviousTestsActivity extends MainActivity implements AdapterView.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_previous_tests);
 
+        Intent intent = getIntent();
+        email = intent.getStringExtra("email");
+
         allRecords = (ListView) findViewById(R.id.recordsListView);
         allRecords.setOnItemClickListener(this);
 
         DatabaseOperations DOP = new DatabaseOperations(ctxPrevTests);
-        CR = DOP.getRecordsInfo(DOP);
+        CR = DOP.getRecordsInfo(DOP, email);
         CR.moveToFirst();
         int count = CR.getCount();
         recordArray = new ArrayList<String>(count);
@@ -80,7 +84,7 @@ public class PreviousTestsActivity extends MainActivity implements AdapterView.O
         lowest = CR.getInt(3);
         temp2 = CR.getInt(4);
         range = CR.getInt(5);
-        launchResults(v, testType, date, time, lowest, temp2, range);
+        launchResults(v, email, testType, date, time, lowest, temp2, range);
     }
 }
 

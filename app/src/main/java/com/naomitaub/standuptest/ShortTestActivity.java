@@ -1,6 +1,7 @@
 package com.naomitaub.standuptest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -24,6 +25,7 @@ public class ShortTestActivity extends MainActivity {
     public EditText shortHR;
     private TextView timerValueS;
 
+    String email;
     private long startTimeS = 0L;
 
     private Handler customHandlerS = new Handler();
@@ -38,6 +40,9 @@ public class ShortTestActivity extends MainActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_short_test);
+
+        Intent intent = getIntent();
+        email = intent.getStringExtra("email");
 
         testType = "Short";
 
@@ -91,7 +96,7 @@ public class ShortTestActivity extends MainActivity {
         viewResults.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                launchResults(view, testType, date, time, lowest, temp2, range);
+                launchResults(view, email, testType, date, time, lowest, temp2, range);
                 //enter proper parameters
             }
         });

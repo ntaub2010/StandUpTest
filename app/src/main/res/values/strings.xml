@@ -21,6 +21,8 @@
     <string name="rangeBPM">Range</string>
     <string name="highBPM">High</string>
     <string name="lowBPM">Low</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
     <string name="title_activity_results">ResultsActivity</string>
     <string name="title_activity_symptoms">SymptomsActivity</string>
     <string name="symptoms"><![CDATA[

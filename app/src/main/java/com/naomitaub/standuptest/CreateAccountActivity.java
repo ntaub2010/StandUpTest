@@ -32,7 +32,7 @@ public class CreateAccountActivity extends MainActivity {
                 DatabaseOperations DB = new DatabaseOperations(ctxAccount);
                 DB.putAccountInfo(DB, email, password);
                 Toast.makeText(getBaseContext(), "Account creation successful", Toast.LENGTH_LONG).show();
-                //launchEnterInfo(v);
+                launchEnterInfo(v, email);
                 //finish();
             }
         });

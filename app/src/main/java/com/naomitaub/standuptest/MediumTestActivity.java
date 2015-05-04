@@ -2,6 +2,7 @@ package com.naomitaub.standuptest;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -25,6 +26,7 @@ public class MediumTestActivity extends MainActivity {
 
     private long startTimeM = 0L;
 
+    String email;
     private Handler customHandlerM = new Handler();
     long timeInMillisecondsM = 0L;
     long timeSwapBuffM = 0L;
@@ -41,6 +43,9 @@ public class MediumTestActivity extends MainActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medium_test);
+
+        Intent intent = getIntent();
+        email = intent.getStringExtra("email");
 
         testType = "Medium";
 
@@ -94,7 +99,7 @@ public class MediumTestActivity extends MainActivity {
         viewResults.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                launchResults(view, testType, date, time, lowest, temp2, range);
+                launchResults(view, email, testType, date, time, lowest, temp2, range);
                 //enter proper parameters
             }
         });

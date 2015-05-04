@@ -247,6 +247,7 @@
     <!-- From: file:/C:/Users/Naomi/Documents/GitHub/StandUpTest/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="connected">Connected</string>
+    <string name="create_account">Create Account</string>
     <!-- From: file:/C:/Users/Naomi/Documents/GitHub/StandUpTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
@@ -277,6 +278,7 @@
     <string name="label_device_address">Device address:</string>
     <string name="label_state">State:</string>
     <string name="lie_down">You should be LYING DOWN</string>
+    <string name="login">Login</string>
     <string name="lowBPM">Low</string>
     <string name="menu_connect">Connect</string>
     <string name="menu_disconnect">Disconnect</string>

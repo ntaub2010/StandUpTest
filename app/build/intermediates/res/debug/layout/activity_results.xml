@@ -33,9 +33,9 @@
         android:padding="10dp"
         android:gravity="center"
         android:onClick="launchSymptoms"
-        android:layout_below="@+id/resultsLOW"
+        android:layout_above="@+id/saveResultsButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="81dp" />
+        android:layout_marginBottom="75dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -125,9 +125,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:gravity="center"
         android:textAllCaps="false"
-        android:layout_marginTop="33dp"
-        android:layout_below="@+id/goToSymptomsButton"
-        android:layout_centerHorizontal="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
 <!-- From: file:/C:/Users/Naomi/Documents/GitHub/StandUpTest/app/src/main/res/layout/activity_results.xml -->

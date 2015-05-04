@@ -1,6 +1,7 @@
 package com.naomitaub.standuptest;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +17,7 @@ public class EnterInfoActivity extends MainActivity {
     EditText enterInfoFirstName, enterInfoLastName, enterInfoBirthdate, enterInfoAge;
     RadioButton femaleButton, maleButton, otherButton;
     Button enterInfoSaveButton;
-    String enterInfoGender, EIFName, EILName, EIBDate;
+    String enterInfoGender, EIFName, EILName, EIBDate, email;
     int EIAge;
     Context ctxEnterInfo = this;
 
@@ -24,6 +25,9 @@ public class EnterInfoActivity extends MainActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_enter_info);
+
+        Intent intent = getIntent();
+        email = intent.getStringExtra("email");
 
         enterInfoFirstName = (EditText) findViewById(R.id.firstNameText);
         enterInfoLastName = (EditText) findViewById(R.id.lastNameText);
@@ -57,7 +61,7 @@ public class EnterInfoActivity extends MainActivity {
                 DB.putUserInfo(DB, EIFName, EILName, EIBDate, EIAge, enterInfoGender);
 
                 Toast.makeText(getBaseContext(), "User info updating successful", Toast.LENGTH_LONG).show();
-                launchTests(v);
+                launchTests(v, email);
                 //finish();
 
             }

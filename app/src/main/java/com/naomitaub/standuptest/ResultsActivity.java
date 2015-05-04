@@ -15,8 +15,8 @@ import java.util.GregorianCalendar;
 public class ResultsActivity extends MainActivity {
 
     public static TextView resultsDate, resultsTime, resultsBlurb, resultsRange, resultsHigh, resultsLow;
-    String dateString, timeString, blurbString, date, time, testType;
-    int rangeInt, highInt, lowInt, lowest, range, temp1, temp2, temp3;
+    String email, blurbString, date, time, testType;
+    int lowest, range, temp2;
     public Calendar cal = new GregorianCalendar();
     //make button to go to save results
     Context ctx = this;
@@ -28,6 +28,7 @@ public class ResultsActivity extends MainActivity {
         setContentView(R.layout.activity_results);
 
         Intent intent = getIntent();
+        email = intent.getStringExtra("email");
         testType = intent.getStringExtra("testType");
         date = intent.getStringExtra("date");
         time = intent.getStringExtra("time");
@@ -69,7 +70,7 @@ public class ResultsActivity extends MainActivity {
         saveResultsButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 DatabaseOperations DB = new DatabaseOperations(ctx);
-                DB.putRecordInfo(DB, testType, date, time, lowest, temp2, range, blurbString);
+                DB.putRecordInfo(DB, email, testType, date, time, lowest, temp2, range, blurbString);
 
                 Toast.makeText(getBaseContext(), "Record insertion successful", Toast.LENGTH_LONG).show();
             }

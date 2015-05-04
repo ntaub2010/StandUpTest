@@ -46,27 +46,38 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
-    public void launchEnterInfo(View view) {
+    public void launchEnterInfo(View view, String email) {
 
         Intent intent = new Intent(this, EnterInfoActivity.class);
+        intent.putExtra("email", email);
         startActivity(intent);
     }
 
-    public void launchTests(View view) {
+    public void launchTests(View view, String email) {
 
         Intent intent = new Intent(this, TestsActivity.class);
+        intent.putExtra("email", email);
         startActivity(intent);
     }
 
-    public void launchShortTest(View view) {
+    public void launchShortTest(View view, String email) {
 
         Intent intent = new Intent(this, ShortTestActivity.class);
+        intent.putExtra("email", email);
         startActivity(intent);
     }
 
-    public void launchMediumTest(View view) {
+    public void launchMediumTest(View view, String email) {
 
         Intent intent = new Intent(this, MediumTestActivity.class);
+        intent.putExtra("email", email);
+        startActivity(intent);
+    }
+
+    public void launchLongTest(View view, String email) {
+
+        Intent intent = new Intent(this, LongTestActivity.class);
+        intent.putExtra("email", email);
         startActivity(intent);
     }
 
@@ -87,15 +98,10 @@ public class MainActivity extends ActionBarActivity {
    //     changeSound.start();
     //}
 
-    public void launchLongTest(View view) {
-
-        Intent intent = new Intent(this, LongTestActivity.class);
-        startActivity(intent);
-    }
-
-    public void launchResults(View view, String testType, String date, String time, int lowest, int highest, int range) {
+    public void launchResults(View view, String email, String testType, String date, String time, int lowest, int highest, int range) {
 
         Intent intent = new Intent(this, ResultsActivity.class);
+        intent.putExtra("email", email);
         intent.putExtra("testType", testType);
         intent.putExtra("date", date);
         intent.putExtra("time", time);
@@ -111,9 +117,10 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
-    public void launchPreviousTests(View view) {
+    public void launchPreviousTests(View view, String email) {
 
         Intent intent = new Intent(this, PreviousTestsActivity.class);
+        intent.putExtra("email", email);
         startActivity(intent);
     }
 

@@ -26,8 +26,7 @@
             android:layout_marginTop="88dp"
             android:layout_gravity="center"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:onClick="launchShortTest"/>
+            android:layout_centerHorizontal="true"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -42,8 +41,7 @@
             android:layout_marginTop="56dp"
             android:layout_gravity="center"
             android:layout_below="@+id/shortTestButton"
-            android:layout_centerHorizontal="true"
-            android:onClick="launchMediumTest"/>
+            android:layout_centerHorizontal="true"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -58,8 +56,7 @@
             android:layout_marginTop="66dp"
             android:layout_gravity="center"
             android:layout_below="@+id/mediumTestButton"
-            android:layout_centerHorizontal="true"
-            android:onClick="launchLongTest"/>
+            android:layout_centerHorizontal="true"/>
 
         <Button
             android:layout_width="wrap_content"

@@ -1,6 +1,7 @@
 package com.naomitaub.standuptest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -22,6 +23,7 @@ public class LongTestActivity extends MainActivity {
     public EditText longHR;
     private TextView timerValueL;
 
+    String email;
     private long startTimeL = 0L;
 
     private Handler customHandlerL = new Handler();
@@ -40,6 +42,9 @@ public class LongTestActivity extends MainActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_long_test);
+
+        Intent intent = getIntent();
+        email = intent.getStringExtra("email");
 
         testType = "Long";
 
@@ -92,7 +97,7 @@ public class LongTestActivity extends MainActivity {
         viewResults.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                launchResults(view, testType, date, time, lowest, temp2, range);
+                launchResults(view, email, testType, date, time, lowest, temp2, range);
                 //enter proper parameters
             }
         });
