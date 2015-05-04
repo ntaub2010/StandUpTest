@@ -1,39 +1,79 @@
 package com.naomitaub.standuptest;
 
-import android.support.v7.app.ActionBarActivity;
+
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
-public class ResultsActivity extends ActionBarActivity {
+public class ResultsActivity extends MainActivity {
+
+    public static TextView resultsDate, resultsTime, resultsBlurb, resultsRange, resultsHigh, resultsLow;
+    String dateString, timeString, blurbString, date, time, testType;
+    int rangeInt, highInt, lowInt, lowest, range, temp1, temp2, temp3;
+    public Calendar cal = new GregorianCalendar();
+    //make button to go to save results
+    Context ctx;
+    Button saveResultsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
-    }
+
+        Intent intent = getIntent();
+        testType = intent.getStringExtra("testType");
+        time = intent.getStringExtra("time");
+        lowest = intent.getIntExtra("lowest", 0);
+        temp2 = intent.getIntExtra("highest", 0);
+        range = intent.getIntExtra("range", 0);
+
+        saveResultsButton = (Button) findViewById(R.id.saveResultsButton);
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_results, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        resultsRange = (TextView) findViewById(R.id.resultsRangeVal);
+        resultsHigh = (TextView) findViewById(R.id.resultsHighVal);
+        resultsLow = (TextView) findViewById(R.id.resultsLowVal);
+        resultsDate = (TextView) findViewById(R.id.resultsDate);
+        resultsTime = (TextView) findViewById(R.id.resultsTime);
+        resultsBlurb = (TextView) findViewById(R.id.resultsBlurb);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        date = Integer.toString((cal.get(Calendar.MONTH)) + 1) + "/" +
+                Integer.toString(cal.get(Calendar.DAY_OF_MONTH)) + "/" +
+                Integer.toString(cal.get(Calendar.YEAR));
+
+        resultsDate.setText("Date: " + date);
+        resultsTime.setText("Time Started: " + time);
+        resultsRange.setText(Integer.toString(range));
+        resultsHigh.setText(Integer.toString(temp2));
+        resultsLow.setText(Integer.toString(lowest));
+
+        if (range < 20) {
+            resultsBlurb.setText("Based on these test results, you most likely do NOT have POTS.");
         }
 
-        return super.onOptionsItemSelected(item);
+        if (range >= 20 && range < 30) {
+            resultsBlurb.setText("Based on these test results, you may have POTS.");
+        }
+
+        if (range >= 30) {
+            resultsBlurb.setText("Based on these test results, there is a high chance that you may have POTS.");
+        }
+
+        blurbString = (resultsBlurb.getText()).toString();
+
+        saveResultsButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                DatabaseOperations DB = new DatabaseOperations(ctx);
+                DB.putRecordInfo(DB, testType, date, time, lowest, temp2, range, blurbString);
+            }
+        });
     }
+
 }

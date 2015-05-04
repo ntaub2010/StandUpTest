@@ -32,10 +32,10 @@
         android:textColor="#FFFFFF"
         android:padding="10dp"
         android:gravity="center"
-        android:layout_alignParentBottom="true"
+        android:onClick="launchSymptoms"
+        android:layout_below="@+id/resultsLOW"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="47dp"
-        android:onClick="launchSymptoms"/>
+        android:layout_marginTop="81dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -61,19 +61,20 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/rangeBPM"
         android:id="@+id/resultsRANGE"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="37dp"
+        android:gravity="center_horizontal"
         android:layout_below="@+id/resultsBlurb"
-        android:layout_toStartOf="@+id/resultsRangeVal" />
+        android:layout_alignStart="@+id/saveResultsButton" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text=""
+        android:paddingLeft="5dp"
         android:id="@+id/resultsRangeVal"
         android:layout_above="@+id/resultsHighVal"
-        android:layout_alignStart="@+id/resultsTime"
-        android:layout_marginStart="28dp" />
+        android:layout_toEndOf="@+id/saveResultsButton" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -89,6 +90,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text=""
+        android:paddingLeft="5dp"
         android:id="@+id/resultsHighVal"
         android:layout_alignTop="@+id/resultsHIGH"
         android:layout_alignStart="@+id/resultsRangeVal" />
@@ -107,8 +109,24 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text=""
+        android:paddingLeft="5dp"
         android:id="@+id/resultsLowVal"
         android:layout_below="@+id/resultsHighVal"
         android:layout_alignStart="@+id/resultsHighVal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveResultsButton"
+        android:background="#58ACFA"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/goToSymptomsButton"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

@@ -1,39 +1,66 @@
 package com.naomitaub.standuptest;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
-public class SymptomsActivity extends ActionBarActivity {
+public class SymptomsActivity extends MainActivity {
+
+    public TextView symptomsBL;
+    public TextView symptomsLinkDI, symptomsLinkDINET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_symptoms);
-    }
 
+        symptomsBL = (TextView) findViewById(R.id.symptomsBL);
+        symptomsBL.setText(Html.fromHtml(getString(R.string.symptoms)));
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_symptoms, menu);
-        return true;
-    }
+        symptomsLinkDI = (TextView) findViewById(R.id.dysautonomiaInternationalLinkTextView);
+        symptomsLinkDINET = (TextView) findViewById(R.id.dinetSymptomsLinkTextView);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        //stripUnderlines(symptomsLinkDI);
+        //stripUnderlines(Text2);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        /*symptomsLinkDI.setText(Html.fromHtml(
+                "<b>text3:</b> Text with a " +
+                "<a href=\"http://google.com\">link</a> "));
+        symptomsLinkDI.setMovementMethod(LinkMovementMethod.getInstance());*/
+
+        //symptomsLinkDINET.setText(Html.fromHtml("<a href=\"http://www.dinet.org/index.php/information-resources/pots-place/pots-symptoms\">POTS Overview from Dysatuonomia International</a>"));
+        //symptomsLinkDINET.setMovementMethod(LinkMovementMethod.getInstance());
+
+        // symptomsLinkDI.setText(Html.fromHtml("<a href=\"http://www.dysautonomiainternational.org/page.php?ID=30\">POTS Symptoms from DINET</a>"));
+        //symptomsLinkDI.setMovementMethod(LinkMovementMethod.getInstance());
+
+        /*private void stripUnderlines(TextView textView) {
+            Spannable s = (Spannable)textView.getText();
+            URLSpan[] spans = s.getSpans(0, s.length(), URLSpan.class);
+            for (URLSpan span: spans) {
+                int start = s.getSpanStart(span);
+                int end = s.getSpanEnd(span);
+                s.removeSpan(span);
+                span = new URLSpanNoUnderline(span.getURL());
+                s.setSpan(span, start, end, 0);
+            }
+            textView.setText(s);
         }
 
-        return super.onOptionsItemSelected(item);
+        class URLSpanNoUnderline extends URLSpan {
+            public URLSpanNoUnderline(String url) {
+                super(url);
+            }
+            @Override
+            public void updateDrawState(TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setUnderlineText(false);
+            }
+        }*/
     }
 }

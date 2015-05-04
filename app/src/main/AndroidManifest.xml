@@ -61,13 +61,7 @@
             android:name=".TestsActivity"
             android:label="@string/title_activity_tests" >
         </activity>
-        <activity
-            android:name=".MediumTestActivity"
-            android:label="MediumTestActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MEDIUMTESTACTIVITY" />
-            </intent-filter>
-        </activity>
+
         <activity
             android:name=".ShortTestActivity"
             android:label="@string/title_activity_short_test"
@@ -75,6 +69,20 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.naomitaub.standuptest.TestsActivity" />
+        </activity>
+        <activity
+            android:name=".MediumTestActivity"
+            android:label="@string/title_activity_medium_test">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIUMTESTACTIVITY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LongTestActivity"
+            android:label="@string/title_activity_long_test">
+            <intent-filter>
+                <action android:name="android.intent.action.LONGTESTACTIVITY" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".ResultsActivity"

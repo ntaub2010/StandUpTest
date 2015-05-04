@@ -15,9 +15,9 @@
         android:background="#A9D0F5"
         android:textAllCaps="false"
         android:id="@+id/startTimerButtonMedium"
-         android:layout_alignTop="@+id/textViewTimeMedium"
-         android:layout_toStartOf="@+id/textViewTimeMedium"
-         android:layout_marginTop="51dp" />
+        android:layout_alignTop="@+id/textViewTimeMedium"
+        android:layout_toStartOf="@+id/textViewTimeMedium"
+        android:layout_marginTop="51dp" />
 
     <Button
         android:layout_width="wrap_content"

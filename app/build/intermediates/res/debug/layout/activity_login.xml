@@ -73,28 +73,30 @@
             android:imeOptions="actionUnspecified" android:inputType="textPassword"
             android:maxLines="1" android:singleLine="true"
             android:layout_gravity="start|center_vertical"
+            android:layout_marginTop="44dp"
             android:layout_alignTop="@+id/email"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="45dp" />
+            android:layout_alignParentStart="true" />
 
         <Button android:id="@+id/email_sign_in_button" style="?android:textAppearanceSmall"
-            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
             android:background="#58ACFA"
             android:textColor="#FFFFFF"
             android:padding="10dp"
             android:gravity="center"
             android:textAllCaps="false"
-            android:text="@string/action_sign_in"
+            android:text="@string/sign_in"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_gravity="center"
             android:layout_centerVertical="true"
-            android:layout_alignStart="@+id/loginContinueButton" />
+            android:layout_centerHorizontal="true" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Continue to Tests"
             android:background="#58ACFA"
+            android:textSize="15sp"
             android:textColor="#FFFFFF"
             android:padding="10dp"
             android:gravity="center"
@@ -102,9 +104,9 @@
             android:id="@+id/loginContinueButton"
             android:layout_gravity="center_horizontal|bottom"
             android:onClick="launchTests"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="36dp" />
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/email_sign_in_button"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 
 

@@ -293,6 +293,8 @@
     <!-- From: file:/C:/Users/Naomi/Documents/GitHub/StandUpTest/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="rangeBPM">Range</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign In</string>
     <string name="sit">You should be SITTING</string>
     <string name="stand">You should be STANDING</string>
     <string name="start">Start</string>
@@ -321,6 +323,8 @@
     <string name="title_activity_login">Sign in</string>
     <!-- From: file:/C:/Users/Naomi/Documents/GitHub/StandUpTest/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_long_test">LongTestActivity</string>
+    <string name="title_activity_medium_test">MediumTestActivity</string>
     <string name="title_activity_previous_tests">PreviousTestsActivity</string>
     <string name="title_activity_results">ResultsActivity</string>
     <string name="title_activity_short_test">ShortTestActivity</string>

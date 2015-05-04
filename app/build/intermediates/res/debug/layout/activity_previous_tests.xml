@@ -17,7 +17,7 @@
         android:background="#0174DF"
         android:textColor="#FFFFFF"
         android:padding="10dp"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:gravity="center"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -27,8 +27,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/recordsListView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
-        android:layout_below="@+id/previousTestsBanner" />
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        android:layout_below="@+id/previousTestsBanner"
+        android:layout_alignStart="@+id/previousTestsBanner"
+        android:layout_alignEnd="@+id/previousTestsBanner" />
+
 </RelativeLayout>
 <!-- From: file:/C:/Users/Naomi/Documents/GitHub/StandUpTest/app/src/main/res/layout/activity_previous_tests.xml -->

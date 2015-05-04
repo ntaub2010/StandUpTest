@@ -44,6 +44,7 @@
             android:paddingRight="10dp"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
+            android:textSize="23sp"
             android:background="#A9D0F5"
             android:layout_marginTop="100dp"
             android:layout_alignParentTop="true"
@@ -56,12 +57,10 @@
             android:paddingRight="10dp"
             android:paddingBottom="5dp"
             android:paddingTop="5dp"
-            android:imeActionId="@+id/login"
-            android:imeActionLabel="@string/action_sign_in_short"
-            android:imeOptions="actionUnspecified" android:inputType="textPassword"
+            android:textSize="23sp"
+            android:layout_marginTop="45dp"
             android:maxLines="1" android:singleLine="true"
-            android:layout_marginTop="39dp"
-            android:layout_below="@+id/createAccountEmail"
+            android:layout_alignTop="@+id/createAccountEmail"
             android:layout_alignParentStart="true" />
 
         <Button android:id="@+id/createAccountButton" style="?android:textAppearanceSmall"
@@ -71,27 +70,29 @@
             android:padding="10dp"
             android:gravity="center"
             android:textAllCaps="false"
-            android:text="@string/action_sign_in"
+            android:text="@string/register"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_centerVertical="true"
             android:layout_alignParentStart="true" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Enter Info"
             android:background="#58ACFA"
             android:textColor="#FFFFFF"
             android:padding="10dp"
+            android:textSize="15sp"
             android:gravity="center"
             android:id="@+id/enterInfoButton"
             android:textAllCaps="false"
             android:onClick="launchEnterInfo"
             android:layout_gravity="center_horizontal"
             android:layout_weight="4.10"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="42dp"
-            android:layout_below="@+id/createAccountButton" />
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/createAccountButton"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 
 </LinearLayout>
