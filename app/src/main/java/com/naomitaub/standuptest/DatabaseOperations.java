@@ -2,13 +2,10 @@ package com.naomitaub.standuptest;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.provider.ContactsContract;
 import android.util.Log;
-import android.widget.Toast;
 
 /**
  * Created by Naomi on 3/22/2015.
@@ -21,10 +18,6 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 
     public static String CREATE_ACCOUNT_QUERY = "CREATE TABLE " + MyConstants.Constants.ACCOUNT_INFO_TABLE +
             "(" + MyConstants.Constants.USERNAME + " TEXT, " + MyConstants.Constants.PASSWORD + " TEXT);";
-//create table User_Info_Table(username TEXT, password TEXT);
-    /* MyConstants.Constants.FIRST_NAME + "TEXT," + MyConstants.Constants.LAST_NAME + "TEXT," +
-            MyConstants.Constants.BIRTHDATE + "TEXT," + MyConstants.Constants.AGE + "INTEGER," +
-            MyConstants.Constants.GENDER + "TEXT */
 
     public static String CREATE_USER_INFO_QUERY = "CREATE TABLE " + MyConstants.Constants.USER_INFO_TABLE +
             "(" + MyConstants.Constants.USERNAME + " TEXT, " + MyConstants.Constants.FIRST_NAME + " TEXT, " +
@@ -56,7 +49,7 @@ public class DatabaseOperations extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) {
 
     }
-//, String fName, String lName, String bdate, Integer age, String gender
+
     public void putAccountInfo(DatabaseOperations dop, String userName, String password) {
 
         SQLiteDatabase SQ = dop.getWritableDatabase();
@@ -64,11 +57,6 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 
         cv.put(MyConstants.Constants.USERNAME, userName);
         cv.put(MyConstants.Constants.PASSWORD, password);
-        /*cv.put(MyConstants.Constants.FIRST_NAME, fName);
-        cv.put(MyConstants.Constants.LAST_NAME, lName);
-        cv.put(MyConstants.Constants.BIRTHDATE, bdate);
-        cv.put(MyConstants.Constants.AGE, age);
-        cv.put(MyConstants.Constants.GENDER, gender);*/
 
         long k = SQ.insert(MyConstants.Constants.ACCOUNT_INFO_TABLE, null, cv);
         Log.i("Database operations", "ACCT - One row inserted");
@@ -124,11 +112,12 @@ public class DatabaseOperations extends SQLiteOpenHelper {
         return CR;
     }
 
-    public Cursor getTestInfo(DatabaseOperations dop) {
+    public Cursor getTestInfo(DatabaseOperations dop, String email) {
         SQLiteDatabase SQ = dop.getReadableDatabase();
         String[] columns = {MyConstants.Constants.TEST_TYPE, MyConstants.Constants.RECORD_DATE, MyConstants.Constants.RECORD_TIME,
         MyConstants.Constants.LOWEST_BPM, MyConstants.Constants.HIGHEST_BPM, MyConstants.Constants.RANGE_BPM};
-        Cursor CR = SQ.query(MyConstants.Constants.USER_HR_RECORDS_TABLE, columns, null, null, null, null, null);
+        String whereClause = MyConstants.Constants.USER_HR_RECORDS_TABLE + "." + MyConstants.Constants.USERNAME + " = \'" + email + "\'";
+        Cursor CR = SQ.query(MyConstants.Constants.USER_HR_RECORDS_TABLE, columns, whereClause, null, null, null, null);
         return CR;
     }
 }

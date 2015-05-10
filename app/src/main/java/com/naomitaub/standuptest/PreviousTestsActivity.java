@@ -1,19 +1,13 @@
 package com.naomitaub.standuptest;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -27,7 +21,6 @@ public class PreviousTestsActivity extends MainActivity implements AdapterView.O
     Cursor CR;
     int lowest, temp2, range;
     String time, date, email;
-    Context ctxResults = this;
     public String testType;
 
     @Override
@@ -62,20 +55,8 @@ public class PreviousTestsActivity extends MainActivity implements AdapterView.O
     }
 
     public void onItemClick(AdapterView<?> l, View v, int position, long id) {
-        Log.i("HelloListView", "You clicked Item: " + id + " at position:" + position);
-        // Then you start a new Activity via Intent
-        //Intent intent = new Intent();
-        //intent.setClass(this, ResultsActivity.class);
-        //intent.putExtra("rowPosition", position);
-        //startActivity(intent);
         DatabaseOperations DOP = new DatabaseOperations(ctxPrevTests);
-        CR = DOP.getTestInfo(DOP);
-        /*if(CR != null && CR.moveToFirst()) {
-            do {
-                CR.moveToPosition(position);
-            } while (CR.moveToNext());
-            CR.close();
-        }*/
+        CR = DOP.getTestInfo(DOP, email);
 
         CR.moveToPosition(position);
         testType = CR.getString(0);

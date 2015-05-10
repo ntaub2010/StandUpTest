@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/lie_down"
+        android:text="@string/sit"
         android:id="@+id/shortTestMessage"
         android:layout_marginTop="33dp"
         android:layout_below="@+id/shortTestBanner"

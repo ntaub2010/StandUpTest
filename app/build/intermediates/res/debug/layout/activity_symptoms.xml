@@ -42,7 +42,6 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/dysautonomia_international_link"
         android:id="@+id/dysautonomiaInternationalLinkTextView"
-        android:autoLink="web"
         android:gravity="center"
         android:layout_above="@+id/dinetSymptomsLinkTextView"
         android:layout_centerHorizontal="true" />
@@ -52,7 +51,6 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/dinet_symptoms_link"
-        android:autoLink="web"
         android:id="@+id/dinetSymptomsLinkTextView"
         android:gravity="center"
         android:layout_alignParentBottom="true"

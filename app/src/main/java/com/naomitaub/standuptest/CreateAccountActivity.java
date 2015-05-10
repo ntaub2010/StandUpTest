@@ -1,6 +1,5 @@
 package com.naomitaub.standuptest;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +10,7 @@ import android.widget.Toast;
 public class CreateAccountActivity extends MainActivity {
 
     public EditText createAccountEmail, createAccountPassword;
-    public Button createAccountButton, enterInfoButton;
+    public Button createAccountButton;
     public String email, password;
     public Context ctxAccount = this;
 
@@ -22,29 +21,17 @@ public class CreateAccountActivity extends MainActivity {
         createAccountEmail = (EditText) findViewById(R.id.createAccountEmail);
         createAccountPassword = (EditText) findViewById(R.id.createAccountPassword);
         createAccountButton = (Button)findViewById(R.id.createAccountButton);
-        enterInfoButton = (Button) findViewById(R.id.enterInfoButton);
 
         createAccountButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), "hello", Toast.LENGTH_LONG).show();
                 email = createAccountEmail.getText().toString();
                 password = createAccountPassword.getText().toString();
 
                 DatabaseOperations DB = new DatabaseOperations(ctxAccount);
                 DB.putAccountInfo(DB, email, password);
                 Toast.makeText(getBaseContext(), "Account creation successful", Toast.LENGTH_LONG).show();
-                //finish();
-            }
-        });
-
-        enterInfoButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                //this isn't working as it should
-                if(email == "" && password == "")
-                    Toast.makeText(getBaseContext(), "No information entered", Toast.LENGTH_LONG).show();
-                else
-                    launchEnterInfo(view, email);
+                launchEnterInfo(v, email);
             }
         });
     }

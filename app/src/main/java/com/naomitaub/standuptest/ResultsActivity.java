@@ -9,16 +9,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
 public class ResultsActivity extends MainActivity {
 
     public static TextView resultsDate, resultsTime, resultsBlurb, resultsRange, resultsHigh, resultsLow;
     String email, blurbString, date, time, testType;
     int lowest, range, temp2;
-    public Calendar cal = new GregorianCalendar();
-    //make button to go to save results
     Context ctx = this;
     Button saveResultsButton;
 

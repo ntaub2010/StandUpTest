@@ -2,9 +2,6 @@ package com.naomitaub.standuptest;
 
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -80,23 +77,6 @@ public class MainActivity extends ActionBarActivity {
         intent.putExtra("email", email);
         startActivity(intent);
     }
-
-    public void playNotificationSound() {
-        try {
-            Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-            Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
-            r.play();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-   // final MediaPlayer changeSound = MediaPlayer.create(this, R.raw.change_sound);
-    //taken from http://oringz.com/ringtone/solemn/
-
-   // public void playChangeSound() {
-   //     changeSound.start();
-    //}
 
     public void launchResults(View view, String email, String testType, String date, String time, int lowest, int highest, int range) {
 

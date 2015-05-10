@@ -31,15 +31,11 @@ public class MyConstants {
         public static final String USER_HR_RECORDS_TABLE = "User_HR_Records_Table";
         public static final String TEST_TYPE = "testType";
         public static final String RECORD_DATE = "recordDate";
-        public static final String RECORD_NAME = "recordName";
         public static final String RECORD_TIME = "recordTime";
 
-        public static final String RECORDS_DETAILS_TABLE = "Records_Details_Table";
         public static final String LOWEST_BPM = "lowest_bpm";
         public static final String HIGHEST_BPM = "highest_bpm";
         public static final String RANGE_BPM = "range_bpm";
         public static final String RECORDS_BLURB = "blurb";
-        public static final String AVG_BPM = "avg_bpm";
-        public static final String NOTES = "notes";
     }
 }
